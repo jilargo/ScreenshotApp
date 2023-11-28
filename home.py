@@ -93,45 +93,6 @@ def create_labeled_date_entry(parent, label_text, row, label_bg, entry_bg, entry
 
     return date_entry
 
-#create_header_label(form_frame4, "Project Info", 0, 0, label_bg, 1)
-#create_header_label(form_frame4, "Start Date:", 0, 1, label_bg,1)
-#create_header_label(form_frame4, "End date", 0, 2, label_bg, 1)
-#create_header_label(form_frame4, "Date of return or deletion", 0, 3, label_bg, 1)
-#create_header_label(form_frame4, "Project Assignment Status", 0, 4, label_bg, 1)
-#create_header_label(form_frame4, "Directory Folder", 0, 5, label_bg, 1)
-#create_header_label(form_frame4, "Data Deletion Timing", 0, 6, label_bg, 1)
-
-
-
-
-
-#def create_entry_row(parent, num_entries, row, column, columnspan=1, combobox_column=None, combobox_values=None,entry_width=20):
-    #entries = []
-    #for i in range(num_entries):
-        #if combobox_column is not None and i == combobox_column:
-            # Create a combobox for the last entry of each row
-            #combo = ttk.Combobox(parent, values=combobox_values, width=entry_width)
-            #combo.grid(row=row, column=column + i, columnspan=columnspan, sticky='ew', padx=5, pady=5)
-            #entries.append(combo)
-        #else:
-            # Create a standard entry
-            #entry = ttk.Entry(parent, width=entry_width)
-            #entry.grid(row=row, column=column + i, columnspan=columnspan, sticky='ew', padx=5, pady=5)
-            #entries.append(entry)
-    #return entries 
-
-# Then, when calling create_entry_row for form_frame4, specify the combobox_column and combobox_values:
-#for i in range(1, 4):  # Assuming you want 3 rows of entries under the headers
-    #create_entry_row(form_frame4, 7, i, 0, combobox_column=6, combobox_values=["after delivery", "daily","-"])
-
-     
-# Create labeled entries in the first frame 
-#create_labeled_entry(form_frame, "Last name, First name:", 0, label_bg, entry_bg,entry_width=30,)
-#create_labeled_entry(form_frame, "Manager:", 1, label_bg, entry_bg,entry_width=30)
-#create_labeled_entry(form_frame, "Location:", 2, label_bg, entry_bg,entry_width=30)
-#create_labeled_entry(form_frame, "Equipment Management # (1-4 digit):", 3, label_bg, entry_bg,entry_width=30)
-#create_labeled_entry(form_frame, "Computer/Host name:", 4, label_bg, entry_bg,entry_width=30)
-#create_labeled_entry(form_frame, "OS:", 5, label_bg, entry_bg,entry_width=30)
 
 frame1_labels = [
     "Last name, First name:",
@@ -167,9 +128,7 @@ for idx, label_text in enumerate(frame1_labels):
     create_labeled_entry(form_frame, label_text, idx, label_bg, entry_bg)
 
 
-# Add labeled entries to the second frame
-for idx, label_text in enumerate(frame2_labels):
-    create_labeled_entry(form_frame2, label_text, idx, label_bg, entry_bg)
+
 
 
 
